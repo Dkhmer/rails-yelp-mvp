@@ -1,0 +1,7 @@
+<%= form_for [@restaurant,@review] do |nouveau| %>
+  <%= nouveau.label :content %>
+  <%= nouveau.text_field :content %>
+  <%= nouveau.label :rating %>
+  <%= nouveau.number_field :rating, inclusion: {in: 0..5} %>
+  <%= nouveau.submit %>
+<% end %>

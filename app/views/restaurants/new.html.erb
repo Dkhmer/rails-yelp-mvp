@@ -1,0 +1,11 @@
+<%= form_for(@restaurant) do |nouveau| %>
+  <%= nouveau.label :name %>
+  <%= nouveau.text_field :name %>
+  <%= nouveau.label :address %>
+  <%= nouveau.text_field :address %>
+  <%= nouveau.label :phone_number %>
+  <%= nouveau.text :phone_number %>
+  <%= nouveau.label :category %>
+  <%= nouveau.text :category %>
+  <%= nouveau.submit %>
+<% end %>
